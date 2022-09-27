@@ -1,0 +1,786 @@
+1
+  1x (e.g., @0x9e0ea in munlock)	c8 f0	sd a0,160(s1)
+3731x (e.g., @0x68a)	82 80	ret
+
+
+2
+  1x (e.g., @0xa006c in flistxattr)	a8 f8	sd a0,112(s1)
+3731x (e.g., @0x68a)	82 80	ret
+
+
+3
+  1x (e.g., @0xa00a8 in getxattr)	e8 f4	sd a0,232(s1)
+3731x (e.g., @0x68a)	82 80	ret
+
+
+4
+  1x (e.g., @0xa0134 in setxattr)	28 ec	sd a0,88(s0)
+3731x (e.g., @0x68a)	82 80	ret
+
+
+5
+    1x (e.g., @0xaa71c in __wcsncat_chk)	08 f8	sd a0,48(s0)
+  1x (e.g., @0xaa71e in __wcsncat_chk)	23 a2 07 00	sw zero,4(a5)
+3731x (e.g., @0x68a)	82 80	ret
+
+
+6
+        1x (e.g., @0xc2940)	e8 fc	sd a0,248(s1)
+      1x (e.g., @0xc2942)	1b 15 15 00	slliw a0,a0,1
+    1x (e.g., @0xc2946)	2a 96	add a2,a2,a0
+  1x (e.g., @0xc2948)	23 00 06 00	sb zero,0(a2)
+3731x (e.g., @0x68a)	82 80	ret
+
+
+7
+      1x (e.g., @0xcb07e)	08 fc	sd a0,56(s0)
+    1x (e.g., @0xcb080)	33 6e 6e 00	or t3,t3,t1
+  1x (e.g., @0xcb084)	33 35 c0 01	snez a0,t3
+3731x (e.g., @0x68a)	82 80	ret
+
+
+8
+                                  1x (e.g., @0x94d7c)	88 e0	sd a0,0(s1)
+                                1x (e.g., @0x94d7e)	13 3b 15 00	seqz s6,a0
+                              1x (e.g., @0x94d82)	f6 60	ld ra,344(sp)
+                            1x (e.g., @0x94d84)	56 64	ld s0,336(sp)
+                          1x (e.g., @0x94d86)	b6 64	ld s1,328(sp)
+                        1x (e.g., @0x94d88)	16 69	ld s2,320(sp)
+                      1x (e.g., @0x94d8a)	f2 79	ld s3,312(sp)
+                    1x (e.g., @0x94d8c)	52 7a	ld s4,304(sp)
+                  1x (e.g., @0x94d8e)	b2 7a	ld s5,296(sp)
+                1x (e.g., @0x94d90)	f2 6b	ld s7,280(sp)
+              1x (e.g., @0x94d92)	52 6c	ld s8,272(sp)
+            1x (e.g., @0x94d94)	b2 6c	ld s9,264(sp)
+          1x (e.g., @0x94d96)	12 6d	ld s10,256(sp)
+        1x (e.g., @0x94d98)	ee 7d	ld s11,248(sp)
+      1x (e.g., @0x94d9a)	5a 85	mv a0,s6
+    1x (e.g., @0x94d9c)	12 7b	ld s6,288(sp)
+  8x (e.g., @0x3f8b8)	35 61	addi sp,sp,352
+3731x (e.g., @0x68a)	82 80	ret
+
+
+9
+                                                1x (e.g., @0x57132 in _IO_wfile_seekoff)	48 e8	sd a0,144(s0)
+                                              1x (e.g., @0x57134 in _IO_wfile_seekoff)	14 ec	sd a3,24(s0)
+                                            1x (e.g., @0x57136 in _IO_wfile_seekoff)	14 e4	sd a3,8(s0)
+                                          1x (e.g., @0x57138 in _IO_wfile_seekoff)	14 e8	sd a3,16(s0)
+                                        1x (e.g., @0x5713a in _IO_wfile_seekoff)	14 f4	sd a3,40(s0)
+                                      1x (e.g., @0x5713c in _IO_wfile_seekoff)	14 f0	sd a3,32(s0)
+                                    1x (e.g., @0x5713e in _IO_wfile_seekoff)	14 f8	sd a3,48(s0)
+                                  1x (e.g., @0x57140 in _IO_wfile_seekoff)	98 eb	sd a4,16(a5)
+                                1x (e.g., @0x57142 in _IO_wfile_seekoff)	98 e3	sd a4,0(a5)
+                              1x (e.g., @0x57144 in _IO_wfile_seekoff)	98 e7	sd a4,8(a5)
+                            1x (e.g., @0x57146 in _IO_wfile_seekoff)	98 f3	sd a4,32(a5)
+                          1x (e.g., @0x57148 in _IO_wfile_seekoff)	98 ef	sd a4,24(a5)
+                        1x (e.g., @0x5714a in _IO_wfile_seekoff)	98 f7	sd a4,40(a5)
+                      1x (e.g., @0x5714c in _IO_wfile_seekoff)	ae 70	ld ra,232(sp)
+                    1x (e.g., @0x5714e in _IO_wfile_seekoff)	0e 74	ld s0,224(sp)
+                  1x (e.g., @0x57150 in _IO_wfile_seekoff)	ee 64	ld s1,216(sp)
+                1x (e.g., @0x57152 in _IO_wfile_seekoff)	4e 69	ld s2,208(sp)
+              1x (e.g., @0x57154 in _IO_wfile_seekoff)	ae 69	ld s3,200(sp)
+            1x (e.g., @0x57156 in _IO_wfile_seekoff)	0e 6a	ld s4,192(sp)
+          1x (e.g., @0x57158 in _IO_wfile_seekoff)	ea 7a	ld s5,184(sp)
+        1x (e.g., @0x5715a in _IO_wfile_seekoff)	4a 7b	ld s6,176(sp)
+      1x (e.g., @0x5715c in _IO_wfile_seekoff)	aa 7b	ld s7,168(sp)
+    1x (e.g., @0x5715e in _IO_wfile_seekoff)	0a 7c	ld s8,160(sp)
+  11x (e.g., @0x23e42)	6d 61	addi sp,sp,240
+3731x (e.g., @0x68a)	82 80	ret
+
+
+10
+                          1x (e.g., @0xc0712 in __libc_clntudp_bufcreate)	23 30 a9 00	sd a0,0(s2)
+                        1x (e.g., @0xc0716 in __libc_clntudp_bufcreate)	ae 60	ld ra,200(sp)
+                      1x (e.g., @0xc0718 in __libc_clntudp_bufcreate)	0e 64	ld s0,192(sp)
+                    1x (e.g., @0xc071a in __libc_clntudp_bufcreate)	ea 74	ld s1,184(sp)
+                  1x (e.g., @0xc071c in __libc_clntudp_bufcreate)	aa 79	ld s3,168(sp)
+                1x (e.g., @0xc071e in __libc_clntudp_bufcreate)	0a 7a	ld s4,160(sp)
+              1x (e.g., @0xc0720 in __libc_clntudp_bufcreate)	ea 6a	ld s5,152(sp)
+            1x (e.g., @0xc0722 in __libc_clntudp_bufcreate)	4a 6b	ld s6,144(sp)
+          1x (e.g., @0xc0724 in __libc_clntudp_bufcreate)	aa 6b	ld s7,136(sp)
+        1x (e.g., @0xc0726 in __libc_clntudp_bufcreate)	0a 6c	ld s8,128(sp)
+      1x (e.g., @0xc0728 in __libc_clntudp_bufcreate)	4a 85	mv a0,s2
+    1x (e.g., @0xc072a in __libc_clntudp_bufcreate)	4a 79	ld s2,176(sp)
+  14x (e.g., @0x214d6)	69 61	addi sp,sp,208
+3731x (e.g., @0x68a)	82 80	ret
+
+
+11
+                            1x (e.g., @0x293c6)	88 e8	sd a0,16(s1)
+                          1x (e.g., @0x293c8)	13 01 04 f2	addi sp,s0,-224
+                        1x (e.g., @0x293cc)	ee 60	ld ra,216(sp)
+                      1x (e.g., @0x293ce)	4e 64	ld s0,208(sp)
+                    1x (e.g., @0x293d0)	ae 64	ld s1,200(sp)
+                  1x (e.g., @0x293d2)	0e 69	ld s2,192(sp)
+                1x (e.g., @0x293d4)	ea 79	ld s3,184(sp)
+              1x (e.g., @0x293d6)	4a 7a	ld s4,176(sp)
+            1x (e.g., @0x293d8)	aa 7a	ld s5,168(sp)
+          1x (e.g., @0x293da)	0a 7b	ld s6,160(sp)
+        1x (e.g., @0x293dc)	ea 6b	ld s7,152(sp)
+      1x (e.g., @0x293de)	4a 6c	ld s8,144(sp)
+    1x (e.g., @0x293e0)	aa 6c	ld s9,136(sp)
+  14x (e.g., @0x22c84)	2d 61	addi sp,sp,224
+3731x (e.g., @0x68a)	82 80	ret
+
+
+12
+                                      1x (e.g., @0x5a4d4 in _IO_file_seekoff)	48 e8	sd a0,144(s0)
+                                    1x (e.g., @0x5a4d6 in _IO_file_seekoff)	3d 9b	andi a4,a4,-17
+                                  1x (e.g., @0x5a4d8 in _IO_file_seekoff)	18 c0	sw a4,0(s0)
+                                1x (e.g., @0x5a4da in _IO_file_seekoff)	1c ec	sd a5,24(s0)
+                              1x (e.g., @0x5a4dc in _IO_file_seekoff)	1c e4	sd a5,8(s0)
+                            1x (e.g., @0x5a4de in _IO_file_seekoff)	1c e8	sd a5,16(s0)
+                          1x (e.g., @0x5a4e0 in _IO_file_seekoff)	1c f4	sd a5,40(s0)
+                        1x (e.g., @0x5a4e2 in _IO_file_seekoff)	1c f0	sd a5,32(s0)
+                      1x (e.g., @0x5a4e4 in _IO_file_seekoff)	1c f8	sd a5,48(s0)
+                    1x (e.g., @0x5a4e6 in _IO_file_seekoff)	ee 60	ld ra,216(sp)
+                  1x (e.g., @0x5a4e8 in _IO_file_seekoff)	4e 64	ld s0,208(sp)
+                1x (e.g., @0x5a4ea in _IO_file_seekoff)	ae 64	ld s1,200(sp)
+              1x (e.g., @0x5a4ec in _IO_file_seekoff)	0e 69	ld s2,192(sp)
+            1x (e.g., @0x5a4ee in _IO_file_seekoff)	ea 79	ld s3,184(sp)
+          1x (e.g., @0x5a4f0 in _IO_file_seekoff)	4a 7a	ld s4,176(sp)
+        1x (e.g., @0x5a4f2 in _IO_file_seekoff)	aa 7a	ld s5,168(sp)
+      1x (e.g., @0x5a4f4 in _IO_file_seekoff)	0a 7b	ld s6,160(sp)
+    1x (e.g., @0x5a4f6 in _IO_file_seekoff)	ea 6b	ld s7,152(sp)
+  14x (e.g., @0x22c84)	2d 61	addi sp,sp,224
+3731x (e.g., @0x68a)	82 80	ret
+
+
+13
+                          1x (e.g., @0xbe1fe in clntunix_create)	23 30 a9 00	sd a0,0(s2)
+                        1x (e.g., @0xbe202 in clntunix_create)	aa 70	ld ra,168(sp)
+                      1x (e.g., @0xbe204 in clntunix_create)	0a 74	ld s0,160(sp)
+                    1x (e.g., @0xbe206 in clntunix_create)	ea 64	ld s1,152(sp)
+                  1x (e.g., @0xbe208 in clntunix_create)	aa 69	ld s3,136(sp)
+                1x (e.g., @0xbe20a in clntunix_create)	0a 6a	ld s4,128(sp)
+              1x (e.g., @0xbe20c in clntunix_create)	e6 7a	ld s5,120(sp)
+            1x (e.g., @0xbe20e in clntunix_create)	46 7b	ld s6,112(sp)
+          1x (e.g., @0xbe210 in clntunix_create)	a6 7b	ld s7,104(sp)
+        1x (e.g., @0xbe212 in clntunix_create)	06 7c	ld s8,96(sp)
+      2x (e.g., @0xbe214 in clntunix_create)	4a 85	mv a0,s2
+    2x (e.g., @0xbe216 in clntunix_create)	4a 69	ld s2,144(sp)
+  32x (e.g., @0x23baa)	4d 61	addi sp,sp,176
+3731x (e.g., @0x68a)	82 80	ret
+
+
+14
+                        1x (e.g., @0xbfdea in clnttcp_create)	23 30 a9 00	sd a0,0(s2)
+                      1x (e.g., @0xbfdee in clnttcp_create)	aa 70	ld ra,168(sp)
+                    1x (e.g., @0xbfdf0 in clnttcp_create)	0a 74	ld s0,160(sp)
+                  1x (e.g., @0xbfdf2 in clnttcp_create)	ea 64	ld s1,152(sp)
+                1x (e.g., @0xbfdf4 in clnttcp_create)	aa 69	ld s3,136(sp)
+              1x (e.g., @0xbfdf6 in clnttcp_create)	0a 6a	ld s4,128(sp)
+            1x (e.g., @0xbfdf8 in clnttcp_create)	e6 7a	ld s5,120(sp)
+          1x (e.g., @0xbfdfa in clnttcp_create)	46 7b	ld s6,112(sp)
+        1x (e.g., @0xbfdfc in clnttcp_create)	a6 7b	ld s7,104(sp)
+      2x (e.g., @0xbe214 in clntunix_create)	4a 85	mv a0,s2
+    2x (e.g., @0xbe216 in clntunix_create)	4a 69	ld s2,144(sp)
+  32x (e.g., @0x23baa)	4d 61	addi sp,sp,176
+3731x (e.g., @0x68a)	82 80	ret
+
+
+15
+                              1x (e.g., @0x3c56c)	88 e0	sd a0,0(s1)
+                            6x (e.g., @0x21be6)	e6 70	ld ra,120(sp)
+                          9x (e.g., @0x21be8)	46 74	ld s0,112(sp)
+                        11x (e.g., @0x21bea)	a6 74	ld s1,104(sp)
+                      11x (e.g., @0x21bec)	06 79	ld s2,96(sp)
+                    11x (e.g., @0x21bee)	e6 69	ld s3,88(sp)
+                  11x (e.g., @0x21bf0)	46 6a	ld s4,80(sp)
+                11x (e.g., @0x21bf2)	a6 6a	ld s5,72(sp)
+              11x (e.g., @0x21bf4)	06 6b	ld s6,64(sp)
+            11x (e.g., @0x21bf6)	e2 7b	ld s7,56(sp)
+          11x (e.g., @0x21bf8)	42 7c	ld s8,48(sp)
+        11x (e.g., @0x21bfa)	a2 7c	ld s9,40(sp)
+      11x (e.g., @0x21bfc)	02 7d	ld s10,32(sp)
+    11x (e.g., @0x21bfe)	e2 6d	ld s11,24(sp)
+  50x (e.g., @0x21c00)	09 61	addi sp,sp,128
+3731x (e.g., @0x68a)	82 80	ret
+
+
+16
+                1x (e.g., @0xba090 in clntraw_create)	08 e0	sd a0,0(s0)
+              1x (e.g., @0xba092 in clntraw_create)	aa 60	ld ra,136(sp)
+            1x (e.g., @0xba094 in clntraw_create)	0a 64	ld s0,128(sp)
+          1x (e.g., @0xba096 in clntraw_create)	e6 74	ld s1,120(sp)
+        1x (e.g., @0xba098 in clntraw_create)	a6 79	ld s3,104(sp)
+      3x (e.g., @0x27d2a)	4a 85	mv a0,s2
+    4x (e.g., @0x27d2c)	46 79	ld s2,112(sp)
+  55x (e.g., @0x20bd0 in __gconv_open)	49 61	addi sp,sp,144
+3731x (e.g., @0x68a)	82 80	ret
+
+
+17
+                      1x (e.g., @0xb461a in herror)	08 e4	sd a0,8(s0)
+                    1x (e.g., @0xb461c in herror)	1c ec	sd a5,24(s0)
+                  1x (e.g., @0xb461e in herror)	93 08 20 04	addi a7,zero,66
+                1x (e.g., @0xb4622 in herror)	09 45	addi a0,zero,2
+              1x (e.g., @0xb4624 in herror)	a6 85	mv a1,s1
+            1x (e.g., @0xb4626 in herror)	05 26	addiw a2,a2,1
+          1x (e.g., @0xb4628 in herror)	73 00 00 00	ecall
+        1x (e.g., @0xb462c in herror)	e6 60	ld ra,88(sp)
+      1x (e.g., @0xb462e in herror)	46 64	ld s0,80(sp)
+    4x (e.g., @0x88a7a)	a6 64	ld s1,72(sp)
+  87x (e.g., @0x20e6a)	25 61	addi sp,sp,96
+3731x (e.g., @0x68a)	82 80	ret
+
+
+18
+                              1x (e.g., @0x3c8d0)	08 e0	sd a0,0(s0)
+                            9x (e.g., @0x310e0 in __cxa_finalize)	a6 70	ld ra,104(sp)
+                          14x (e.g., @0x310e2 in __cxa_finalize)	06 74	ld s0,96(sp)
+                        14x (e.g., @0x310e4 in __cxa_finalize)	e6 64	ld s1,88(sp)
+                      14x (e.g., @0x310e6 in __cxa_finalize)	46 69	ld s2,80(sp)
+                    14x (e.g., @0x310e8 in __cxa_finalize)	a6 69	ld s3,72(sp)
+                  14x (e.g., @0x310ea in __cxa_finalize)	06 6a	ld s4,64(sp)
+                14x (e.g., @0x310ec in __cxa_finalize)	e2 7a	ld s5,56(sp)
+              14x (e.g., @0x310ee in __cxa_finalize)	42 7b	ld s6,48(sp)
+            14x (e.g., @0x310f0 in __cxa_finalize)	a2 7b	ld s7,40(sp)
+          14x (e.g., @0x310f2 in __cxa_finalize)	02 7c	ld s8,32(sp)
+        14x (e.g., @0x310f4 in __cxa_finalize)	e2 6c	ld s9,24(sp)
+      14x (e.g., @0x310f6 in __cxa_finalize)	42 6d	ld s10,16(sp)
+    14x (e.g., @0x310f8 in __cxa_finalize)	a2 6d	ld s11,8(sp)
+  89x (e.g., @0x310fa in __cxa_finalize)	65 61	addi sp,sp,112
+3731x (e.g., @0x68a)	82 80	ret
+
+
+19
+                    1x (e.g., @0xaaed4 in inet_network)	08 fc	sd a0,56(s0)
+                  1x (e.g., @0xaaed6 in inet_network)	7d 55	addi a0,zero,-1
+                1x (e.g., @0xaaed8 in inet_network)	26 64	ld s0,72(sp)
+              1x (e.g., @0xaaeda in inet_network)	86 64	ld s1,64(sp)
+            1x (e.g., @0xaaedc in inet_network)	62 79	ld s2,56(sp)
+          1x (e.g., @0xaaede in inet_network)	c2 79	ld s3,48(sp)
+        1x (e.g., @0xaaee0 in inet_network)	22 7a	ld s4,40(sp)
+      1x (e.g., @0xaaee2 in inet_network)	82 7a	ld s5,32(sp)
+    1x (e.g., @0xaaee4 in inet_network)	62 6b	ld s6,24(sp)
+  136x (e.g., @0x20a40 in iconv)	61 61	addi sp,sp,80
+3731x (e.g., @0x68a)	82 80	ret
+
+
+20
+                      1x (e.g., @0xbb8de in registerrpc)	e8 fc	sd a0,248(s1)
+                    2x (e.g., @0xba672 in xdr_pmaplist)	01 45	mv a0,zero
+                  8x (e.g., @0x61694)	a6 60	ld ra,72(sp)
+                8x (e.g., @0x61696)	06 64	ld s0,64(sp)
+              9x (e.g., @0x61698)	e2 74	ld s1,56(sp)
+            9x (e.g., @0x6169a)	42 79	ld s2,48(sp)
+          9x (e.g., @0x6169c)	a2 79	ld s3,40(sp)
+        9x (e.g., @0x6169e)	02 7a	ld s4,32(sp)
+      9x (e.g., @0x616a0)	e2 6a	ld s5,24(sp)
+    9x (e.g., @0x616a2)	42 6b	ld s6,16(sp)
+  136x (e.g., @0x20a40 in iconv)	61 61	addi sp,sp,80
+3731x (e.g., @0x68a)	82 80	ret
+
+
+21
+                                            1x (e.g., @0xbbff6 in xdrrec_create)	08 e4	sd a0,8(s0)
+                                          1x (e.g., @0xbbff8 in xdrrec_create)	08 ec	sd a0,24(s0)
+                                        1x (e.g., @0xbbffa in xdrrec_create)	08 f8	sd a0,48(s0)
+                                      1x (e.g., @0xbbffc in xdrrec_create)	10 f0	sd a2,32(s0)
+                                    1x (e.g., @0xbbffe in xdrrec_create)	23 2c 04 02	sw zero,56(s0)
+                                  1x (e.g., @0xbc002 in xdrrec_create)	34 e4	sd a3,72(s0)
+                                1x (e.g., @0xbc004 in xdrrec_create)	38 f0	sd a4,96(s0)
+                              1x (e.g., @0xbc006 in xdrrec_create)	38 ec	sd a4,88(s0)
+                            1x (e.g., @0xbc008 in xdrrec_create)	23 34 04 06	sd zero,104(s0)
+                          1x (e.g., @0xbc00c in xdrrec_create)	3c d8	sw a5,112(s0)
+                        1x (e.g., @0xbc00e in xdrrec_create)	06 64	ld s0,64(sp)
+                      1x (e.g., @0xbc010 in xdrrec_create)	97 45 04 00	auipc a1,278528 # 0x100010
+                    1x (e.g., @0xbc014 in xdrrec_create)	93 85 05 7a	addi a1,a1,1952
+                  1x (e.g., @0xbc018 in xdrrec_create)	23 b4 b9 00	sd a1,8(s3)
+                13x (e.g., @0x32454)	e2 74	ld s1,56(sp)
+              13x (e.g., @0x32456)	42 79	ld s2,48(sp)
+            13x (e.g., @0x32458)	a2 79	ld s3,40(sp)
+          13x (e.g., @0x3245a)	02 7a	ld s4,32(sp)
+        13x (e.g., @0x3245c)	e2 6a	ld s5,24(sp)
+      13x (e.g., @0x3245e)	42 6b	ld s6,16(sp)
+    13x (e.g., @0x32460)	a2 6b	ld s7,8(sp)
+  136x (e.g., @0x20a40 in iconv)	61 61	addi sp,sp,80
+3731x (e.g., @0x68a)	82 80	ret
+
+
+22
+                                          1x (e.g., @0xbbff8 in xdrrec_create)	08 ec	sd a0,24(s0)
+                                        1x (e.g., @0xbbffa in xdrrec_create)	08 f8	sd a0,48(s0)
+                                      1x (e.g., @0xbbffc in xdrrec_create)	10 f0	sd a2,32(s0)
+                                    1x (e.g., @0xbbffe in xdrrec_create)	23 2c 04 02	sw zero,56(s0)
+                                  1x (e.g., @0xbc002 in xdrrec_create)	34 e4	sd a3,72(s0)
+                                1x (e.g., @0xbc004 in xdrrec_create)	38 f0	sd a4,96(s0)
+                              1x (e.g., @0xbc006 in xdrrec_create)	38 ec	sd a4,88(s0)
+                            1x (e.g., @0xbc008 in xdrrec_create)	23 34 04 06	sd zero,104(s0)
+                          1x (e.g., @0xbc00c in xdrrec_create)	3c d8	sw a5,112(s0)
+                        1x (e.g., @0xbc00e in xdrrec_create)	06 64	ld s0,64(sp)
+                      1x (e.g., @0xbc010 in xdrrec_create)	97 45 04 00	auipc a1,278528 # 0x100010
+                    1x (e.g., @0xbc014 in xdrrec_create)	93 85 05 7a	addi a1,a1,1952
+                  1x (e.g., @0xbc018 in xdrrec_create)	23 b4 b9 00	sd a1,8(s3)
+                13x (e.g., @0x32454)	e2 74	ld s1,56(sp)
+              13x (e.g., @0x32456)	42 79	ld s2,48(sp)
+            13x (e.g., @0x32458)	a2 79	ld s3,40(sp)
+          13x (e.g., @0x3245a)	02 7a	ld s4,32(sp)
+        13x (e.g., @0x3245c)	e2 6a	ld s5,24(sp)
+      13x (e.g., @0x3245e)	42 6b	ld s6,16(sp)
+    13x (e.g., @0x32460)	a2 6b	ld s7,8(sp)
+  136x (e.g., @0x20a40 in iconv)	61 61	addi sp,sp,80
+3731x (e.g., @0x68a)	82 80	ret
+
+
+23
+                                        1x (e.g., @0xbbffa in xdrrec_create)	08 f8	sd a0,48(s0)
+                                      1x (e.g., @0xbbffc in xdrrec_create)	10 f0	sd a2,32(s0)
+                                    1x (e.g., @0xbbffe in xdrrec_create)	23 2c 04 02	sw zero,56(s0)
+                                  1x (e.g., @0xbc002 in xdrrec_create)	34 e4	sd a3,72(s0)
+                                1x (e.g., @0xbc004 in xdrrec_create)	38 f0	sd a4,96(s0)
+                              1x (e.g., @0xbc006 in xdrrec_create)	38 ec	sd a4,88(s0)
+                            1x (e.g., @0xbc008 in xdrrec_create)	23 34 04 06	sd zero,104(s0)
+                          1x (e.g., @0xbc00c in xdrrec_create)	3c d8	sw a5,112(s0)
+                        1x (e.g., @0xbc00e in xdrrec_create)	06 64	ld s0,64(sp)
+                      1x (e.g., @0xbc010 in xdrrec_create)	97 45 04 00	auipc a1,278528 # 0x100010
+                    1x (e.g., @0xbc014 in xdrrec_create)	93 85 05 7a	addi a1,a1,1952
+                  1x (e.g., @0xbc018 in xdrrec_create)	23 b4 b9 00	sd a1,8(s3)
+                13x (e.g., @0x32454)	e2 74	ld s1,56(sp)
+              13x (e.g., @0x32456)	42 79	ld s2,48(sp)
+            13x (e.g., @0x32458)	a2 79	ld s3,40(sp)
+          13x (e.g., @0x3245a)	02 7a	ld s4,32(sp)
+        13x (e.g., @0x3245c)	e2 6a	ld s5,24(sp)
+      13x (e.g., @0x3245e)	42 6b	ld s6,16(sp)
+    13x (e.g., @0x32460)	a2 6b	ld s7,8(sp)
+  136x (e.g., @0x20a40 in iconv)	61 61	addi sp,sp,80
+3731x (e.g., @0x68a)	82 80	ret
+
+
+24
+                        1x (e.g., @0x51e44)	88 f0	sd a0,32(s1)
+                      1x (e.g., @0x51e46)	88 ec	sd a0,24(s1)
+                    3x (e.g., @0x5195a)	a6 60	ld ra,72(sp)
+                  3x (e.g., @0x5195c)	06 64	ld s0,64(sp)
+                3x (e.g., @0x5195e)	e2 74	ld s1,56(sp)
+              3x (e.g., @0x51960)	42 79	ld s2,48(sp)
+            3x (e.g., @0x51962)	a2 79	ld s3,40(sp)
+          3x (e.g., @0x51964)	02 7a	ld s4,32(sp)
+        3x (e.g., @0x51966)	42 6b	ld s6,16(sp)
+      3x (e.g., @0x51968)	56 85	mv a0,s5
+    16x (e.g., @0x20a3e in iconv)	e2 6a	ld s5,24(sp)
+  136x (e.g., @0x20a40 in iconv)	61 61	addi sp,sp,80
+3731x (e.g., @0x68a)	82 80	ret
+
+
+25
+                      1x (e.g., @0x51e46)	88 ec	sd a0,24(s1)
+                    3x (e.g., @0x5195a)	a6 60	ld ra,72(sp)
+                  3x (e.g., @0x5195c)	06 64	ld s0,64(sp)
+                3x (e.g., @0x5195e)	e2 74	ld s1,56(sp)
+              3x (e.g., @0x51960)	42 79	ld s2,48(sp)
+            3x (e.g., @0x51962)	a2 79	ld s3,40(sp)
+          3x (e.g., @0x51964)	02 7a	ld s4,32(sp)
+        3x (e.g., @0x51966)	42 6b	ld s6,16(sp)
+      3x (e.g., @0x51968)	56 85	mv a0,s5
+    16x (e.g., @0x20a3e in iconv)	e2 6a	ld s5,24(sp)
+  136x (e.g., @0x20a40 in iconv)	61 61	addi sp,sp,80
+3731x (e.g., @0x68a)	82 80	ret
+
+
+26
+            1x (e.g., @0xb4428)	23 30 a9 00	sd a0,0(s2)
+          14x (e.g., @0x3979e)	a2 74	ld s1,40(sp)
+        14x (e.g., @0x397a0)	02 79	ld s2,32(sp)
+      14x (e.g., @0x397a2)	e2 69	ld s3,24(sp)
+    16x (e.g., @0x397a4)	42 6a	ld s4,16(sp)
+  203x (e.g., @0x20992 in iconv_open)	21 61	addi sp,sp,64
+3731x (e.g., @0x68a)	82 80	ret
+
+
+27
+                  1x (e.g., @0x2808c)	08 f4	sd a0,40(s0)
+                1x (e.g., @0x2808e)	e2 70	ld ra,56(sp)
+              1x (e.g., @0x28090)	1c c4	sw a5,8(s0)
+            15x (e.g., @0x28092)	22 85	mv a0,s0
+          30x (e.g., @0x28094)	42 74	ld s0,48(sp)
+        33x (e.g., @0x28096)	a2 74	ld s1,40(sp)
+      33x (e.g., @0x28098)	02 79	ld s2,32(sp)
+    35x (e.g., @0x2809a)	e2 69	ld s3,24(sp)
+  203x (e.g., @0x20992 in iconv_open)	21 61	addi sp,sp,64
+3731x (e.g., @0x68a)	82 80	ret
+
+
+28
+          1x (e.g., @0x9ebd6 in hcreate_r)	08 e0	sd a0,0(s0)
+        1x (e.g., @0x9ebd8 in hcreate_r)	a2 60	ld ra,8(sp)
+      1x (e.g., @0x9ebda in hcreate_r)	02 64	ld s0,0(sp)
+    6x (e.g., @0x9d2f0 in endttyent)	33 35 a0 00	snez a0,a0
+  290x (e.g., @0x20b20 in iconv_close)	41 01	addi sp,sp,16
+3731x (e.g., @0x68a)	82 80	ret
+
+
+29
+          1x (e.g., @0x9c592 in setfsent)	08 e0	sd a0,0(s0)
+        2x (e.g., @0x9c594 in setfsent)	a2 60	ld ra,8(sp)
+      4x (e.g., @0x9c596 in setfsent)	02 64	ld s0,0(sp)
+    9x (e.g., @0x7cada in timespec_get)	05 45	addi a0,zero,1
+  290x (e.g., @0x20b20 in iconv_close)	41 01	addi sp,sp,16
+3731x (e.g., @0x68a)	82 80	ret
+
+
+30
+          1x (e.g., @0xb043a)	08 f8	sd a0,48(s0)
+        2x (e.g., @0x9c594 in setfsent)	a2 60	ld ra,8(sp)
+      4x (e.g., @0x9c596 in setfsent)	02 64	ld s0,0(sp)
+    9x (e.g., @0x7cada in timespec_get)	05 45	addi a0,zero,1
+  290x (e.g., @0x20b20 in iconv_close)	41 01	addi sp,sp,16
+3731x (e.g., @0x68a)	82 80	ret
+
+
+31
+          1x (e.g., @0x5d75e in pthread_attr_init)	08 e8	sd a0,16(s0)
+        9x (e.g., @0x41262 in tmpnam_r)	a2 60	ld ra,8(sp)
+      11x (e.g., @0x2f340)	02 64	ld s0,0(sp)
+    29x (e.g., @0x2f342)	01 45	mv a0,zero
+  290x (e.g., @0x20b20 in iconv_close)	41 01	addi sp,sp,16
+3731x (e.g., @0x68a)	82 80	ret
+
+
+32
+      1x (e.g., @0xc8106)	08 ec	sd a0,24(s0)
+    130x (e.g., @0x2249e)	02 64	ld s0,0(sp)
+  290x (e.g., @0x20b20 in iconv_close)	41 01	addi sp,sp,16
+3731x (e.g., @0x68a)	82 80	ret
+
+
+33
+      1x (e.g., @0xc83aa)	08 e0	sd a0,0(s0)
+    130x (e.g., @0x2249e)	02 64	ld s0,0(sp)
+  290x (e.g., @0x20b20 in iconv_close)	41 01	addi sp,sp,16
+3731x (e.g., @0x68a)	82 80	ret
+
+
+34
+      2x (e.g., @0xc813e)	08 e8	sd a0,16(s0)
+    130x (e.g., @0x2249e)	02 64	ld s0,0(sp)
+  290x (e.g., @0x20b20 in iconv_close)	41 01	addi sp,sp,16
+3731x (e.g., @0x68a)	82 80	ret
+
+
+35
+          1x (e.g., @0x99416)	08 f0	sd a0,32(s0)
+        5x (e.g., @0x2e3b8 in catclose)	01 45	mv a0,zero
+      78x (e.g., @0x2249c)	a2 60	ld ra,8(sp)
+    130x (e.g., @0x2249e)	02 64	ld s0,0(sp)
+  290x (e.g., @0x20b20 in iconv_close)	41 01	addi sp,sp,16
+3731x (e.g., @0x68a)	82 80	ret
+
+
+36
+          1x (e.g., @0xbbec0)	23 30 a9 00	sd a0,0(s2)
+        3x (e.g., @0xbbec4)	e2 64	ld s1,24(sp)
+      3x (e.g., @0xbbec6)	42 69	ld s2,16(sp)
+    14x (e.g., @0x63eec in _obstack_begin)	05 45	addi a0,zero,1
+  397x (e.g., @0x21e00)	45 61	addi sp,sp,48
+3731x (e.g., @0x68a)	82 80	ret
+
+
+37
+                      1x (e.g., @0xbbe90)	23 30 a9 00	sd a0,0(s2)
+                    1x (e.g., @0xbbe94)	3c 74	ld a5,104(s0)
+                  1x (e.g., @0xbbe96)	24 ec	sd s1,88(s0)
+                1x (e.g., @0xbbe98)	05 45	addi a0,zero,1
+              1x (e.g., @0xbbe9a)	f1 17	addi a5,a5,-4
+            1x (e.g., @0xbbe9c)	3c f4	sd a5,104(s0)
+          5x (e.g., @0x410ec in psignal)	a2 70	ld ra,40(sp)
+        15x (e.g., @0x410ee in psignal)	02 74	ld s0,32(sp)
+      18x (e.g., @0x410f0 in psignal)	e2 64	ld s1,24(sp)
+    33x (e.g., @0x2abc6)	42 69	ld s2,16(sp)
+  397x (e.g., @0x21e00)	45 61	addi sp,sp,48
+3731x (e.g., @0x68a)	82 80	ret
+
+
+38
+            1x (e.g., @0xb3992 in __idna_to_dns_encoding)	08 e0	sd a0,0(s0)
+          6x (e.g., @0x803ea in sleep)	a2 70	ld ra,40(sp)
+        6x (e.g., @0x803ec in sleep)	02 74	ld s0,32(sp)
+      7x (e.g., @0x27c84)	e2 64	ld s1,24(sp)
+    39x (e.g., @0x27c86)	01 45	mv a0,zero
+  397x (e.g., @0x21e00)	45 61	addi sp,sp,48
+3731x (e.g., @0x68a)	82 80	ret
+
+
+39
+            1x (e.g., @0x3ac12)	23 b0 a9 00	sd a0,0(s3)
+          18x (e.g., @0x2d868)	e2 64	ld s1,24(sp)
+        18x (e.g., @0x2d86a)	42 69	ld s2,16(sp)
+      19x (e.g., @0x2d86c)	a2 69	ld s3,8(sp)
+    39x (e.g., @0x27c86)	01 45	mv a0,zero
+  397x (e.g., @0x21e00)	45 61	addi sp,sp,48
+3731x (e.g., @0x68a)	82 80	ret
+
+
+40
+                                1x (e.g., @0x22538)	23 34 a9 02	sd a0,40(s2)
+                              1x (e.g., @0x2253c)	23 38 b9 02	sd a1,48(s2)
+                            1x (e.g., @0x22540)	23 3c 09 02	sd zero,56(s2)
+                          1x (e.g., @0x22544)	23 30 09 04	sd zero,64(s2)
+                        1x (e.g., @0x22548)	23 30 09 00	sd zero,0(s2)
+                      1x (e.g., @0x2254c)	23 34 09 00	sd zero,8(s2)
+                    1x (e.g., @0x22550)	23 24 c9 04	sw a2,72(s2)
+                  1x (e.g., @0x22554)	23 26 d9 04	sw a3,76(s2)
+                1x (e.g., @0x22558)	23 28 e9 04	sw a4,80(s2)
+              1x (e.g., @0x2255c)	23 2a f9 04	sw a5,84(s2)
+            1x (e.g., @0x22560)	23 2c 09 04	sw zero,88(s2)
+          40x (e.g., @0x22564)	e2 64	ld s1,24(sp)
+        40x (e.g., @0x22566)	42 69	ld s2,16(sp)
+      40x (e.g., @0x22568)	a2 69	ld s3,8(sp)
+    42x (e.g., @0x2256a)	02 6a	ld s4,0(sp)
+  397x (e.g., @0x21e00)	45 61	addi sp,sp,48
+3731x (e.g., @0x68a)	82 80	ret
+
+
+41
+                    1x (e.g., @0xa5980)	08 fc	sd a0,56(s0)
+                  1x (e.g., @0xa5982)	3c e0	sd a5,64(s0)
+                17x (e.g., @0x2e242 in catopen)	a2 70	ld ra,40(sp)
+              17x (e.g., @0x2e244 in catopen)	22 85	mv a0,s0
+            36x (e.g., @0x2e246 in catopen)	02 74	ld s0,32(sp)
+          40x (e.g., @0x22564)	e2 64	ld s1,24(sp)
+        40x (e.g., @0x22566)	42 69	ld s2,16(sp)
+      40x (e.g., @0x22568)	a2 69	ld s3,8(sp)
+    42x (e.g., @0x2256a)	02 6a	ld s4,0(sp)
+  397x (e.g., @0x21e00)	45 61	addi sp,sp,48
+3731x (e.g., @0x68a)	82 80	ret
+
+
+42
+                            1x (e.g., @0x634d0 in mcheck)	88 f0	sd a0,32(s1)
+                          1x (e.g., @0x634d2 in mcheck)	a2 70	ld ra,40(sp)
+                        1x (e.g., @0x634d4 in mcheck)	14 e3	sd a3,0(a4)
+                      1x (e.g., @0x634d6 in mcheck)	22 85	mv a0,s0
+                    1x (e.g., @0x634d8 in mcheck)	17 07 00 00	auipc a4,0 # 0x634d8
+                  1x (e.g., @0x634dc in mcheck)	13 07 a7 db	addi a4,a4,-582
+                1x (e.g., @0x634e0 in mcheck)	02 74	ld s0,32(sp)
+              1x (e.g., @0x634e2 in mcheck)	98 e3	sd a4,0(a5)
+            1x (e.g., @0x634e4 in mcheck)	85 47	addi a5,zero,1
+          1x (e.g., @0x634e6 in mcheck)	23 b4 04 03	sd a6,40(s1)
+        1x (e.g., @0x634ea in mcheck)	8c fc	sd a1,56(s1)
+      1x (e.g., @0x634ec in mcheck)	9c c4	sw a5,8(s1)
+    60x (e.g., @0x27ca4)	e2 64	ld s1,24(sp)
+  397x (e.g., @0x21e00)	45 61	addi sp,sp,48
+3731x (e.g., @0x68a)	82 80	ret
+
+
+43
+              1x (e.g., @0xb64ea)	08 e4	sd a0,8(s0)
+            3x (e.g., @0x31570 in initstate)	a2 70	ld ra,40(sp)
+          3x (e.g., @0x31572 in initstate)	02 74	ld s0,32(sp)
+        5x (e.g., @0x31574 in initstate)	42 69	ld s2,16(sp)
+      14x (e.g., @0x31576 in initstate)	26 85	mv a0,s1
+    60x (e.g., @0x27ca4)	e2 64	ld s1,24(sp)
+  397x (e.g., @0x21e00)	45 61	addi sp,sp,48
+3731x (e.g., @0x68a)	82 80	ret
+
+
+44
+          1x (e.g., @0x59dea)	48 e8	sd a0,144(s0)
+        24x (e.g., @0x392b6 in __strtof_nan)	a2 70	ld ra,40(sp)
+      37x (e.g., @0x31d68 in getrandom)	02 74	ld s0,32(sp)
+    60x (e.g., @0x27ca4)	e2 64	ld s1,24(sp)
+  397x (e.g., @0x21e00)	45 61	addi sp,sp,48
+3731x (e.g., @0x68a)	82 80	ret
+
+
+45
+          1x (e.g., @0x9a2e8 in fts_children)	88 e4	sd a0,8(s1)
+        4x (e.g., @0x5c322)	42 69	ld s2,16(sp)
+      4x (e.g., @0x5c324)	e2 64	ld s1,24(sp)
+    88x (e.g., @0x21dfe)	a2 69	ld s3,8(sp)
+  397x (e.g., @0x21e00)	45 61	addi sp,sp,48
+3731x (e.g., @0x68a)	82 80	ret
+
+
+46
+        1x (e.g., @0x74698 in time)	08 e0	sd a0,0(s0)
+      11x (e.g., @0x412b0 in tempnam)	e2 60	ld ra,24(sp)
+    17x (e.g., @0x412b2 in tempnam)	42 64	ld s0,16(sp)
+  535x (e.g., @0x204d4)	05 61	addi sp,sp,32
+3731x (e.g., @0x68a)	82 80	ret
+
+
+47
+          1x (e.g., @0xc3b94)	08 e0	sd a0,0(s0)
+        3x (e.g., @0xc2de2 in xdr_u_long)	e2 60	ld ra,24(sp)
+      3x (e.g., @0xc2de4 in xdr_u_long)	42 64	ld s0,16(sp)
+    21x (e.g., @0x532ba)	05 45	addi a0,zero,1
+  535x (e.g., @0x204d4)	05 61	addi sp,sp,32
+3731x (e.g., @0x68a)	82 80	ret
+
+
+48
+                1x (e.g., @0xa5df0)	08 f8	sd a0,48(s0)
+              1x (e.g., @0xa5df2)	24 e0	sd s1,64(s0)
+            1x (e.g., @0xa5df4)	08 fc	sd a0,56(s0)
+          6x (e.g., @0x532b4)	e2 60	ld ra,24(sp)
+        6x (e.g., @0x532b6)	42 64	ld s0,16(sp)
+      8x (e.g., @0x532b8)	a2 64	ld s1,8(sp)
+    21x (e.g., @0x532ba)	05 45	addi a0,zero,1
+  535x (e.g., @0x204d4)	05 61	addi sp,sp,32
+3731x (e.g., @0x68a)	82 80	ret
+
+
+49
+            1x (e.g., @0xa5df4)	08 fc	sd a0,56(s0)
+          6x (e.g., @0x532b4)	e2 60	ld ra,24(sp)
+        6x (e.g., @0x532b6)	42 64	ld s0,16(sp)
+      8x (e.g., @0x532b8)	a2 64	ld s1,8(sp)
+    21x (e.g., @0x532ba)	05 45	addi a0,zero,1
+  535x (e.g., @0x204d4)	05 61	addi sp,sp,32
+3731x (e.g., @0x68a)	82 80	ret
+
+
+50
+                1x (e.g., @0x64332 in __libc_scratch_buffer_set_array_size)	08 e0	sd a0,0(s0)
+              1x (e.g., @0x64334 in __libc_scratch_buffer_set_array_size)	04 e4	sd s1,8(s0)
+            6x (e.g., @0x64336 in __libc_scratch_buffer_set_array_size)	e2 60	ld ra,24(sp)
+          9x (e.g., @0x55f12 in _IO_wdefault_doallocate)	42 64	ld s0,16(sp)
+        9x (e.g., @0x55f14 in _IO_wdefault_doallocate)	a2 64	ld s1,8(sp)
+      10x (e.g., @0x55f16 in _IO_wdefault_doallocate)	02 69	ld s2,0(sp)
+    21x (e.g., @0x532ba)	05 45	addi a0,zero,1
+  535x (e.g., @0x204d4)	05 61	addi sp,sp,32
+3731x (e.g., @0x68a)	82 80	ret
+
+
+51
+                1x (e.g., @0xc37ee)	88 e0	sd a0,0(s1)
+              2x (e.g., @0xc377c)	23 3c 24 01	sd s2,24(s0)
+            6x (e.g., @0x64336 in __libc_scratch_buffer_set_array_size)	e2 60	ld ra,24(sp)
+          9x (e.g., @0x55f12 in _IO_wdefault_doallocate)	42 64	ld s0,16(sp)
+        9x (e.g., @0x55f14 in _IO_wdefault_doallocate)	a2 64	ld s1,8(sp)
+      10x (e.g., @0x55f16 in _IO_wdefault_doallocate)	02 69	ld s2,0(sp)
+    21x (e.g., @0x532ba)	05 45	addi a0,zero,1
+  535x (e.g., @0x204d4)	05 61	addi sp,sp,32
+3731x (e.g., @0x68a)	82 80	ret
+
+
+52
+              1x (e.g., @0x6a062 in wcstok)	23 30 a9 00	sd a0,0(s2)
+            32x (e.g., @0x2fbd8 in sigtimedwait)	e2 60	ld ra,24(sp)
+          32x (e.g., @0x2fbda in sigtimedwait)	22 85	mv a0,s0
+        87x (e.g., @0x2fbdc in sigtimedwait)	42 64	ld s0,16(sp)
+      95x (e.g., @0x2fbde in sigtimedwait)	a2 64	ld s1,8(sp)
+    104x (e.g., @0x2fbe0 in sigtimedwait)	02 69	ld s2,0(sp)
+  535x (e.g., @0x204d4)	05 61	addi sp,sp,32
+3731x (e.g., @0x68a)	82 80	ret
+
+
+53
+              1x (e.g., @0xb38ee)	08 e8	sd a0,16(s0)
+            32x (e.g., @0x2fbd8 in sigtimedwait)	e2 60	ld ra,24(sp)
+          32x (e.g., @0x2fbda in sigtimedwait)	22 85	mv a0,s0
+        87x (e.g., @0x2fbdc in sigtimedwait)	42 64	ld s0,16(sp)
+      95x (e.g., @0x2fbde in sigtimedwait)	a2 64	ld s1,8(sp)
+    104x (e.g., @0x2fbe0 in sigtimedwait)	02 69	ld s2,0(sp)
+  535x (e.g., @0x204d4)	05 61	addi sp,sp,32
+3731x (e.g., @0x68a)	82 80	ret
+
+
+54
+                        1x (e.g., @0x5a978)	48 e8	sd a0,144(s0)
+                      1x (e.g., @0x5a97a)	14 ec	sd a3,24(s0)
+                    1x (e.g., @0x5a97c)	3d 9b	andi a4,a4,-17
+                  1x (e.g., @0x5a97e)	1c e4	sd a5,8(s0)
+                1x (e.g., @0x5a980)	1c e8	sd a5,16(s0)
+              1x (e.g., @0x5a982)	18 c0	sw a4,0(s0)
+            1x (e.g., @0x5a984)	26 85	mv a0,s1
+          46x (e.g., @0x41d64)	e2 60	ld ra,24(sp)
+        87x (e.g., @0x2fbdc in sigtimedwait)	42 64	ld s0,16(sp)
+      95x (e.g., @0x2fbde in sigtimedwait)	a2 64	ld s1,8(sp)
+    104x (e.g., @0x2fbe0 in sigtimedwait)	02 69	ld s2,0(sp)
+  535x (e.g., @0x204d4)	05 61	addi sp,sp,32
+3731x (e.g., @0x68a)	82 80	ret
+
+
+55
+                                  1x (e.g., @0xc163a in xprt_register)	88 e0	sd a0,0(s1)
+                                1x (e.g., @0xc163c in xprt_register)	1b 87 16 00	addiw a4,a3,1
+                              1x (e.g., @0xc1640 in xprt_register)	ba 86	mv a3,a4
+                            1x (e.g., @0xc1642 in xprt_register)	0e 07	slli a4,a4,3
+                          1x (e.g., @0xc1644 in xprt_register)	14 c0	sw a3,0(s0)
+                        1x (e.g., @0xc1646 in xprt_register)	2a 97	add a4,a4,a0
+                      1x (e.g., @0xc1648 in xprt_register)	23 2c 27 ff	sw s2,-8(a4)
+                    1x (e.g., @0xc164c in xprt_register)	18 40	lw a4,0(s0)
+                  1x (e.g., @0xc164e in xprt_register)	0e 07	slli a4,a4,3
+                1x (e.g., @0xc1650 in xprt_register)	b3 07 e5 00	add a5,a0,a4
+              1x (e.g., @0xc1654 in xprt_register)	13 07 30 0c	addi a4,zero,195
+            1x (e.g., @0xc1658 in xprt_register)	23 9e e7 fe	sh a4,-4(a5)
+          46x (e.g., @0x41d64)	e2 60	ld ra,24(sp)
+        87x (e.g., @0x2fbdc in sigtimedwait)	42 64	ld s0,16(sp)
+      95x (e.g., @0x2fbde in sigtimedwait)	a2 64	ld s1,8(sp)
+    104x (e.g., @0x2fbe0 in sigtimedwait)	02 69	ld s2,0(sp)
+  535x (e.g., @0x204d4)	05 61	addi sp,sp,32
+3731x (e.g., @0x68a)	82 80	ret
+
+
+56
+                                  1x (e.g., @0x9411c)	08 e4	sd a0,8(s0)
+                                1x (e.g., @0x9411e)	93 86 17 00	addi a3,a5,1
+                              1x (e.g., @0x94122)	ba 97	add a5,a5,a4
+                            1x (e.g., @0x94124)	8e 07	slli a5,a5,3
+                          1x (e.g., @0x94126)	36 97	add a4,a4,a3
+                        1x (e.g., @0x94128)	14 e0	sd a3,0(s0)
+                      1x (e.g., @0x9412a)	aa 97	add a5,a5,a0
+                    1x (e.g., @0x9412c)	0e 07	slli a4,a4,3
+                  1x (e.g., @0x9412e)	3a 95	add a0,a0,a4
+                1x (e.g., @0x94130)	84 e3	sd s1,0(a5)
+              1x (e.g., @0x94132)	23 30 05 00	sd zero,0(a0)
+            9x (e.g., @0x64308 in __libc_scratch_buffer_set_array_size)	01 45	mv a0,zero
+          46x (e.g., @0x41d64)	e2 60	ld ra,24(sp)
+        87x (e.g., @0x2fbdc in sigtimedwait)	42 64	ld s0,16(sp)
+      95x (e.g., @0x2fbde in sigtimedwait)	a2 64	ld s1,8(sp)
+    104x (e.g., @0x2fbe0 in sigtimedwait)	02 69	ld s2,0(sp)
+  535x (e.g., @0x204d4)	05 61	addi sp,sp,32
+3731x (e.g., @0x68a)	82 80	ret
+
+
+57
+            1x (e.g., @0x9c520)	88 e0	sd a0,0(s1)
+          1x (e.g., @0x9c522)	97 84 06 00	auipc s1,425984 # 0x104522
+        1x (e.g., @0x9c526)	93 84 64 14	addi s1,s1,326
+      29x (e.g., @0x3d28e)	26 85	mv a0,s1
+    169x (e.g., @0x204d2)	a2 64	ld s1,8(sp)
+  535x (e.g., @0x204d4)	05 61	addi sp,sp,32
+3731x (e.g., @0x68a)	82 80	ret
+
+
+58
+              1x (e.g., @0x3d2ee)	08 e0	sd a0,0(s0)
+            1x (e.g., @0x3d2f0)	e2 60	ld ra,24(sp)
+          2x (e.g., @0x3d2f2)	42 64	ld s0,16(sp)
+        2x (e.g., @0x3d2f4)	9b 84 04 03	addiw s1,s1,48
+      29x (e.g., @0x3d28e)	26 85	mv a0,s1
+    169x (e.g., @0x204d2)	a2 64	ld s1,8(sp)
+  535x (e.g., @0x204d4)	05 61	addi sp,sp,32
+3731x (e.g., @0x68a)	82 80	ret
+
+
+59
+                        1x (e.g., @0xb6706 in __resolv_context_get_override)	08 e4	sd a0,8(s0)
+                      1x (e.g., @0xb6708 in __resolv_context_get_override)	92 97	add a5,a5,tp
+                    1x (e.g., @0xb670a in __resolv_context_get_override)	98 63	ld a4,0(a5)
+                  1x (e.g., @0xb670c in __resolv_context_get_override)	14 e8	sd a3,16(s0)
+                1x (e.g., @0xb670e in __resolv_context_get_override)	80 e3	sd s0,0(a5)
+              1x (e.g., @0xb6710 in __resolv_context_get_override)	18 f0	sd a4,32(s0)
+            1x (e.g., @0xb6712 in __resolv_context_get_override)	23 0c 04 00	sb zero,24(s0)
+          8x (e.g., @0x62f08)	e2 60	ld ra,24(sp)
+        8x (e.g., @0x62f0a)	22 85	mv a0,s0
+      124x (e.g., @0x20f76)	42 64	ld s0,16(sp)
+    169x (e.g., @0x204d2)	a2 64	ld s1,8(sp)
+  535x (e.g., @0x204d4)	05 61	addi sp,sp,32
+3731x (e.g., @0x68a)	82 80	ret
+
+
+60
+              1x (e.g., @0x9688c)	08 e4	sd a0,8(s0)
+            1x (e.g., @0x9688e)	04 c0	sw s1,0(s0)
+          11x (e.g., @0x5bbe2 in _IO_switch_to_get_mode)	01 45	mv a0,zero
+        101x (e.g., @0x20f74)	e2 60	ld ra,24(sp)
+      124x (e.g., @0x20f76)	42 64	ld s0,16(sp)
+    169x (e.g., @0x204d2)	a2 64	ld s1,8(sp)
+  535x (e.g., @0x204d4)	05 61	addi sp,sp,32
+3731x (e.g., @0x68a)	82 80	ret
+
+

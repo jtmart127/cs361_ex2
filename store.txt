@@ -1,0 +1,2 @@
+  1x (e.g., @0x9e0ea in munlock)	c8 f0	sd a0,160(s1)
+3731x (e.g., @0x68a)	82 80	ret

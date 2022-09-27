@@ -1,0 +1,8 @@
+              1x (e.g., @0x9d5d8 in getpass)	03 b5 89 00	ld a0,8(s3)
+            2x (e.g., @0x97982 in euidaccess)	aa 74	ld s1,168(sp)
+          2x (e.g., @0x97984 in euidaccess)	0a 79	ld s2,160(sp)
+        2x (e.g., @0x97986 in euidaccess)	ea 69	ld s3,152(sp)
+      2x (e.g., @0x97988 in euidaccess)	4a 6a	ld s4,144(sp)
+    3x (e.g., @0x9798a in euidaccess)	aa 6a	ld s5,136(sp)
+  26x (e.g., @0x2213e)	29 61	addi sp,sp,192
+3731x (e.g., @0x68a)	82 80	ret

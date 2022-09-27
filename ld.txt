@@ -1,0 +1,179 @@
+1
+                                1x (e.g., @0xb1318)	03 35 09 00	ld a0,0(s2)
+                              1x (e.g., @0xb131c)	13 01 04 b5	addi sp,s0,-1200
+                            1x (e.g., @0xb1320)	83 30 81 4a	ld ra,1192(sp)
+                          1x (e.g., @0xb1324)	03 34 01 4a	ld s0,1184(sp)
+                        1x (e.g., @0xb1328)	83 34 81 49	ld s1,1176(sp)
+                      1x (e.g., @0xb132c)	03 39 01 49	ld s2,1168(sp)
+                    1x (e.g., @0xb1330)	83 39 81 48	ld s3,1160(sp)
+                  1x (e.g., @0xb1334)	03 3a 01 48	ld s4,1152(sp)
+                1x (e.g., @0xb1338)	83 3a 81 47	ld s5,1144(sp)
+              1x (e.g., @0xb133c)	03 3b 01 47	ld s6,1136(sp)
+            1x (e.g., @0xb1340)	83 3b 81 46	ld s7,1128(sp)
+          1x (e.g., @0xb1344)	03 3c 01 46	ld s8,1120(sp)
+        1x (e.g., @0xb1348)	83 3c 81 45	ld s9,1112(sp)
+      1x (e.g., @0xb134c)	03 3d 01 45	ld s10,1104(sp)
+    1x (e.g., @0xb1350)	83 3d 81 44	ld s11,1096(sp)
+  2x (e.g., @0xb1354)	13 01 01 4b	addi sp,sp,1200
+3731x (e.g., @0x68a)	82 80	ret
+
+
+2
+              1x (e.g., @0x9d5d8 in getpass)	03 b5 89 00	ld a0,8(s3)
+            2x (e.g., @0x97982 in euidaccess)	aa 74	ld s1,168(sp)
+          2x (e.g., @0x97984 in euidaccess)	0a 79	ld s2,160(sp)
+        2x (e.g., @0x97986 in euidaccess)	ea 69	ld s3,152(sp)
+      2x (e.g., @0x97988 in euidaccess)	4a 6a	ld s4,144(sp)
+    3x (e.g., @0x9798a in euidaccess)	aa 6a	ld s5,136(sp)
+  26x (e.g., @0x2213e)	29 61	addi sp,sp,192
+3731x (e.g., @0x68a)	82 80	ret
+
+
+3
+                          1x (e.g., @0x86fc0)	08 68	ld a0,16(s0)
+                        1x (e.g., @0x86fc2)	93 07 15 00	addi a5,a0,1
+                      1x (e.g., @0x86fc6)	1c e8	sd a5,16(s0)
+                    1x (e.g., @0x86fc8)	01 25	sext.w a0,a0
+                  8x (e.g., @0x61694)	a6 60	ld ra,72(sp)
+                8x (e.g., @0x61696)	06 64	ld s0,64(sp)
+              9x (e.g., @0x61698)	e2 74	ld s1,56(sp)
+            9x (e.g., @0x6169a)	42 79	ld s2,48(sp)
+          9x (e.g., @0x6169c)	a2 79	ld s3,40(sp)
+        9x (e.g., @0x6169e)	02 7a	ld s4,32(sp)
+      9x (e.g., @0x616a0)	e2 6a	ld s5,24(sp)
+    9x (e.g., @0x616a2)	42 6b	ld s6,16(sp)
+  136x (e.g., @0x20a40 in iconv)	61 61	addi sp,sp,80
+3731x (e.g., @0x68a)	82 80	ret
+
+
+4
+                        1x (e.g., @0xbc1a0 in xdrrec_eof)	28 6c	ld a0,88(s0)
+                      1x (e.g., @0xbc1a2 in xdrrec_eof)	3c 70	ld a5,96(s0)
+                    1x (e.g., @0xbc1a4 in xdrrec_eof)	1d 8d	sub a0,a0,a5
+                  1x (e.g., @0xbc1a6 in xdrrec_eof)	13 35 15 00	seqz a0,a0
+                9x (e.g., @0x20a32 in iconv)	a6 60	ld ra,72(sp)
+              13x (e.g., @0x20a34 in iconv)	06 64	ld s0,64(sp)
+            13x (e.g., @0x20a36 in iconv)	e2 74	ld s1,56(sp)
+          13x (e.g., @0x20a38 in iconv)	42 79	ld s2,48(sp)
+        13x (e.g., @0x20a3a in iconv)	a2 79	ld s3,40(sp)
+      13x (e.g., @0x20a3c in iconv)	02 7a	ld s4,32(sp)
+    16x (e.g., @0x20a3e in iconv)	e2 6a	ld s5,24(sp)
+  136x (e.g., @0x20a40 in iconv)	61 61	addi sp,sp,80
+3731x (e.g., @0x68a)	82 80	ret
+
+
+5
+            1x (e.g., @0x9e15c in fcvt)	03 b5 09 00	ld a0,0(s3)
+          2x (e.g., @0x9e160 in fcvt)	a2 74	ld s1,40(sp)
+        2x (e.g., @0x9e162 in fcvt)	02 79	ld s2,32(sp)
+      2x (e.g., @0x9e164 in fcvt)	e2 69	ld s3,24(sp)
+    2x (e.g., @0x9e166 in fcvt)	22 24	fld fs0,8(sp)
+  203x (e.g., @0x20992 in iconv_open)	21 61	addi sp,sp,64
+3731x (e.g., @0x68a)	82 80	ret
+
+
+6
+                  1x (e.g., @0x9e5ae in qfcvt)	03 b5 0a 00	ld a0,0(s5)
+                21x (e.g., @0x21d32)	e2 70	ld ra,56(sp)
+              32x (e.g., @0x21d34)	42 74	ld s0,48(sp)
+            32x (e.g., @0x21d36)	a2 74	ld s1,40(sp)
+          32x (e.g., @0x21d38)	02 79	ld s2,32(sp)
+        33x (e.g., @0x21d3a)	e2 69	ld s3,24(sp)
+      33x (e.g., @0x21d3c)	42 6a	ld s4,16(sp)
+    36x (e.g., @0x21d3e)	a2 6a	ld s5,8(sp)
+  203x (e.g., @0x20992 in iconv_open)	21 61	addi sp,sp,64
+3731x (e.g., @0x68a)	82 80	ret
+
+
+7
+              2x (e.g., @0xa6040)	08 74	ld a0,40(s0)
+            2x (e.g., @0xa6042)	a2 60	ld ra,8(sp)
+          2x (e.g., @0xa6044)	02 64	ld s0,0(sp)
+        2x (e.g., @0xa6046)	93 47 f5 ff	not a5,a0
+      2x (e.g., @0xa604a)	fd 97	srai a5,a5,63
+    4x (e.g., @0x64dd6 in strpbrk)	7d 8d	and a0,a0,a5
+  290x (e.g., @0x20b20 in iconv_close)	41 01	addi sp,sp,16
+3731x (e.g., @0x68a)	82 80	ret
+
+
+8
+                                    1x (e.g., @0x74f92)	28 60	ld a0,64(s0)
+                                  1x (e.g., @0x74f94)	99 8f	sub a5,a5,a4
+                                1x (e.g., @0x74f96)	b3 37 f0 00	snez a5,a5
+                              1x (e.g., @0x74f9a)	97 d5 08 00	auipc a1,577536 # 0x101f9a
+                            1x (e.g., @0x74f9e)	83 b5 65 6b	ld a1,1718(a1)
+                          1x (e.g., @0x74fa2)	97 d6 08 00	auipc a3,577536 # 0x101fa2
+                        1x (e.g., @0x74fa6)	83 b6 e6 60	ld a3,1550(a3)
+                      1x (e.g., @0x74faa)	3b 07 e0 40	negw a4,a4
+                    1x (e.g., @0x74fae)	9c c1	sw a5,0(a1)
+                  1x (e.g., @0x74fb0)	97 d7 08 00	auipc a5,577536 # 0x101fb0
+                1x (e.g., @0x74fb4)	83 b7 87 60	ld a5,1544(a5)
+              1x (e.g., @0x74fb8)	98 e3	sd a4,0(a5)
+            1x (e.g., @0x74fba)	90 e2	sd a2,0(a3)
+          1x (e.g., @0x74fbc)	88 e6	sd a0,8(a3)
+        24x (e.g., @0x392b6 in __strtof_nan)	a2 70	ld ra,40(sp)
+      37x (e.g., @0x31d68 in getrandom)	02 74	ld s0,32(sp)
+    60x (e.g., @0x27ca4)	e2 64	ld s1,24(sp)
+  397x (e.g., @0x21e00)	45 61	addi sp,sp,48
+3731x (e.g., @0x68a)	82 80	ret
+
+
+9
+          1x (e.g., @0x9a33a in fts_children)	03 b5 09 01	ld a0,16(s3)
+        77x (e.g., @0x21dfa)	e2 64	ld s1,24(sp)
+      77x (e.g., @0x21dfc)	42 69	ld s2,16(sp)
+    88x (e.g., @0x21dfe)	a2 69	ld s3,8(sp)
+  397x (e.g., @0x21e00)	45 61	addi sp,sp,48
+3731x (e.g., @0x68a)	82 80	ret
+
+
+10
+          2x (e.g., @0xa31ca in wctrans)	03 b5 09 00	ld a0,0(s3)
+        77x (e.g., @0x21dfa)	e2 64	ld s1,24(sp)
+      77x (e.g., @0x21dfc)	42 69	ld s2,16(sp)
+    88x (e.g., @0x21dfe)	a2 69	ld s3,8(sp)
+  397x (e.g., @0x21e00)	45 61	addi sp,sp,48
+3731x (e.g., @0x68a)	82 80	ret
+
+
+11
+                  1x (e.g., @0x41724 in _IO_flockfile)	48 64	ld a0,136(s0)
+                1x (e.g., @0x41726 in _IO_flockfile)	04 e5	sd s1,8(a0)
+              1x (e.g., @0x41728 in _IO_flockfile)	58 41	lw a4,4(a0)
+            1x (e.g., @0x4172a in _IO_flockfile)	e2 60	ld ra,24(sp)
+          1x (e.g., @0x4172c in _IO_flockfile)	42 64	ld s0,16(sp)
+        1x (e.g., @0x4172e in _IO_flockfile)	05 27	addiw a4,a4,1
+      1x (e.g., @0x41730 in _IO_flockfile)	58 c1	sw a4,4(a0)
+    169x (e.g., @0x204d2)	a2 64	ld s1,8(sp)
+  535x (e.g., @0x204d4)	05 61	addi sp,sp,32
+3731x (e.g., @0x68a)	82 80	ret
+
+
+12
+            2x (e.g., @0xa5f9c)	08 64	ld a0,8(s0)
+          2x (e.g., @0xa5f9e)	e2 60	ld ra,24(sp)
+        2x (e.g., @0xa5fa0)	04 e4	sd s1,8(s0)
+      124x (e.g., @0x20f76)	42 64	ld s0,16(sp)
+    169x (e.g., @0x204d2)	a2 64	ld s1,8(sp)
+  535x (e.g., @0x204d4)	05 61	addi sp,sp,32
+3731x (e.g., @0x68a)	82 80	ret
+
+
+13
+            2x (e.g., @0xa5fd4)	08 68	ld a0,16(s0)
+          2x (e.g., @0xa5fd6)	e2 60	ld ra,24(sp)
+        2x (e.g., @0xa5fd8)	04 e8	sd s1,16(s0)
+      124x (e.g., @0x20f76)	42 64	ld s0,16(sp)
+    169x (e.g., @0x204d2)	a2 64	ld s1,8(sp)
+  535x (e.g., @0x204d4)	05 61	addi sp,sp,32
+3731x (e.g., @0x68a)	82 80	ret
+
+
+14
+            2x (e.g., @0xa600c)	08 6c	ld a0,24(s0)
+          2x (e.g., @0xa600e)	e2 60	ld ra,24(sp)
+        2x (e.g., @0xa6010)	04 ec	sd s1,24(s0)
+      124x (e.g., @0x20f76)	42 64	ld s0,16(sp)
+    169x (e.g., @0x204d2)	a2 64	ld s1,8(sp)
+  535x (e.g., @0x204d4)	05 61	addi sp,sp,32
+3731x (e.g., @0x68a)	82 80	ret
